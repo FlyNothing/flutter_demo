@@ -1,0 +1,55 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_demo/common/httperror/loading_page.dart';
+import 'package:flutter_demo/common/httperror/service_unavailable_page.dart';
+import 'package:flutter_demo/common/util/api_util.dart';
+import 'package:flutter_demo/common/util/text_style.dart';
+import 'package:flutter_demo/common/vo/base_resp_vo.dart';
+
+class StateDemoPage extends StatefulWidget {
+  static const String routeName = "/state-demo";
+
+  const StateDemoPage({Key? key}) : super(key: key);
+
+  @override
+  State<StatefulWidget> createState() {
+    return StateDemoPageState();
+  }
+}
+
+class StateDemoPageState extends State<StateDemoPage> {
+  final BaseRespVo _respVo = initBaseRespVo(code: -1);
+
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(const Duration(seconds: 1), () {
+      _getTest();
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (_respVo.code == -1) {
+      return const HttpLoadingPage();
+    } else if (_respVo.code == 0) {
+      return genContainer();
+    } else {
+      return const HttpServiceUnavailablePage();
+    }
+  }
+
+  void _getTest() {
+    Future<BaseRespVo> future = getTest();
+    future.then((respVo) {
+      _respVo.code = respVo.code;
+      setState(() {});
+    });
+  }
+
+  Widget genContainer() {
+    return Container(
+      alignment: Alignment.center,
+      child: Text("页面加载完成", style: TextStyleUtil.size16W400()),
+    );
+  }
+}
