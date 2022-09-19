@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/common/util/text_style.dart';
 
-AppBar standardAppBar({required String title}) {
+AppBar appBarStandard({required String title}) {
   return AppBar(
-    title: Text(title),
     centerTitle: true,
+    elevation: 0, // 取消阴影
+    title: Text(
+      title,
+      textAlign: TextAlign.center,
+      style: TextStyleUtil.size18W600(color: Colors.white),
+    ),
   );
 }
