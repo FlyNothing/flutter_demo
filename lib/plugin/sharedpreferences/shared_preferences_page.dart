@@ -25,7 +25,7 @@ class SharedPreferencesPageState extends State<SharedPreferencesPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: standardAppBar(title: 'SharedPreferences测试'),
+      appBar: appBarStandard(title: 'SharedPreferences测试'),
       body: _getBody(context),
     );
   }

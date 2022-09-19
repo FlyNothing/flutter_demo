@@ -8,7 +8,7 @@ class BaseMenuPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: standardAppBar(title: 'Flutter基础'),
+      appBar: appBarStandard(title: 'Flutter基础'),
       body: _getBody(),
     );
   }

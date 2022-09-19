@@ -8,7 +8,7 @@ class PluginMenuPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: standardAppBar(title: '扩展插件'),
+      appBar: appBarStandard(title: '扩展插件'),
       body: _getBody(),
     );
   }

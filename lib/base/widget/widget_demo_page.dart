@@ -16,7 +16,7 @@ class WidgetDemoPageState extends State<WidgetDemoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: standardAppBar(title: 'Widget测试'),
+      appBar: appBarStandard(title: 'Widget测试'),
       body: _getBody(context),
     );
   }

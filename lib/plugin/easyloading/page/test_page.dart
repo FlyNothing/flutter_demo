@@ -7,7 +7,7 @@ class TestPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: standardAppBar(title: 'EasyLoading测试'),
+      appBar: appBarStandard(title: 'EasyLoading测试'),
       body: _getBody(context),
     );
   }

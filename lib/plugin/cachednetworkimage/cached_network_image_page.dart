@@ -8,7 +8,7 @@ class CachedNetworkImagePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: standardAppBar(title: 'CachedNetworkImage测试'),
+      appBar: appBarStandard(title: 'CachedNetworkImage测试'),
       body: _getBody(context),
     );
   }

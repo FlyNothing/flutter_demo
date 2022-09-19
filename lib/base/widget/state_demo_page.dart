@@ -31,7 +31,7 @@ class StateDemoPageState extends State<StateDemoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: standardAppBar(title: 'State测试'),
+      appBar: appBarStandard(title: 'State测试'),
       body: _getBody(context),
     );
   }

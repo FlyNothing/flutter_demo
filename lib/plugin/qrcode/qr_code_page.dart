@@ -9,7 +9,7 @@ class QRCodePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: standardAppBar(title: 'QRCode测试'),
+      appBar: appBarStandard(title: 'QRCode测试'),
       body: _getBody(context),
     );
   }

@@ -8,7 +8,7 @@ class IssueMenuPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: standardAppBar(title: '问题修复'),
+      appBar: appBarStandard(title: '问题修复'),
       body: _getBody(),
     );
   }

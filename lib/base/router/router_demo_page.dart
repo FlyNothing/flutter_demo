@@ -10,7 +10,7 @@ class RouterDemoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: standardAppBar(title: '路由跳转'),
+      appBar: appBarStandard(title: '路由跳转'),
       body: _getBody(context),
     );
   }
