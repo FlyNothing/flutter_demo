@@ -7,12 +7,10 @@ class WidgetDemoPage extends StatefulWidget {
   const WidgetDemoPage({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() {
-    return WidgetDemoPageState();
-  }
+  State<StatefulWidget> createState() => _WidgetDemoPageState();
 }
 
-class WidgetDemoPageState extends State<WidgetDemoPage> {
+class _WidgetDemoPageState extends State<WidgetDemoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

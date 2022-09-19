@@ -9,10 +9,10 @@ class EasyLoadingPage extends StatefulWidget {
   const EasyLoadingPage({Key? key}) : super(key: key);
 
   @override
-  EasyLoadingPageState createState() => EasyLoadingPageState();
+  State<StatefulWidget> createState() => _EasyLoadingPageState();
 }
 
-class EasyLoadingPageState extends State<EasyLoadingPage> {
+class _EasyLoadingPageState extends State<EasyLoadingPage> {
   Timer? _timer;
   late double _progress;
 

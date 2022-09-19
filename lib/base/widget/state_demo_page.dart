@@ -12,12 +12,10 @@ class StateDemoPage extends StatefulWidget {
   const StateDemoPage({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() {
-    return StateDemoPageState();
-  }
+  State<StatefulWidget> createState() => _StateDemoPageState();
 }
 
-class StateDemoPageState extends State<StateDemoPage> {
+class _StateDemoPageState extends State<StateDemoPage> {
   final BaseRespVo _respVo = initBaseRespVo(code: -1);
 
   @override

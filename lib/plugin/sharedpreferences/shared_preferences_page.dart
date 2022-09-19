@@ -7,12 +7,10 @@ class SharedPreferencesPage extends StatefulWidget {
   const SharedPreferencesPage({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() {
-    return SharedPreferencesPageState();
-  }
+  State<StatefulWidget> createState() => _SharedPreferencesPageState();
 }
 
-class SharedPreferencesPageState extends State<SharedPreferencesPage> {
+class _SharedPreferencesPageState extends State<SharedPreferencesPage> {
   final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
   late int _intValue = -1;
 

@@ -30,10 +30,10 @@ class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
 
   @override
-  State<MyHomePage> createState() => MyHomePageState();
+  State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<MyHomePage> {
   final List _barList = [
     {'text': 'Base', 'icon': const Icon(Icons.account_balance), 'page': const BaseMenuPage()},
     {'text': 'Issue', 'icon': const Icon(Icons.ac_unit), 'page': const IssueMenuPage()},
