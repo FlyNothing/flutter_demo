@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/common/util/text_style.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -23,6 +24,13 @@ class SharedPreferencesPageState extends State<SharedPreferencesPage> {
 
   @override
   Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: standardAppBar(title: 'SharedPreferences测试'),
+      body: _getBody(context),
+    );
+  }
+
+  Widget _getBody(BuildContext context) {
     return ListView(
       children: [
         ListTile(

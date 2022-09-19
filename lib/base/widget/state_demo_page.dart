@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/httperror/loading_page.dart';
 import 'package:flutter_demo/common/httperror/service_unavailable_page.dart';
 import 'package:flutter_demo/common/util/api_util.dart';
+import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/common/util/text_style.dart';
 import 'package:flutter_demo/common/vo/base_resp_vo.dart';
 
@@ -29,6 +30,13 @@ class StateDemoPageState extends State<StateDemoPage> {
 
   @override
   Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: standardAppBar(title: 'State测试'),
+      body: _getBody(context),
+    );
+  }
+
+  Widget _getBody(BuildContext context) {
     if (_respVo.code == -1) {
       return const HttpLoadingPage();
     } else if (_respVo.code == 0) {

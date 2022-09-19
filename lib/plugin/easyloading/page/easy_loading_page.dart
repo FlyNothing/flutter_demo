@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/plugin/easyloading/page/test_page.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
@@ -28,6 +29,13 @@ class EasyLoadingPageState extends State<EasyLoadingPage> {
 
   @override
   Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: standardAppBar(title: 'EasyLoading测试'),
+      body: _getBody(context),
+    );
+  }
+
+  Widget _getBody(BuildContext context) {
     return SingleChildScrollView(
       child: Wrap(
         // runAlignment: WrapAlignment.center,

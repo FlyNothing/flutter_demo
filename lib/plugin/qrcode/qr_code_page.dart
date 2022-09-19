@@ -1,4 +1,5 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 class QRCodePage extends StatelessWidget {
@@ -7,6 +8,13 @@ class QRCodePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: standardAppBar(title: 'QRCode测试'),
+      body: _getBody(context),
+    );
+  }
+
+  Widget _getBody(BuildContext context) {
     return getImageContainer();
   }
 

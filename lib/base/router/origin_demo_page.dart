@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/base/router/router_demo_page.dart';
+import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/common/util/text_style.dart';
 
 /// OriginDemoPage结合RouterDemoPage一起，实现参数通过Route的Settings传递
@@ -9,6 +10,13 @@ class OriginDemoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: standardAppBar(title: '路由跳转'),
+      body: _getBody(context),
+    );
+  }
+
+  Widget _getBody(BuildContext context) {
     return GestureDetector(
       child: Center(
         child: Container(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/common/util/text_style.dart';
 
 class WidgetDemoPage extends StatefulWidget {
@@ -14,6 +15,13 @@ class WidgetDemoPage extends StatefulWidget {
 class WidgetDemoPageState extends State<WidgetDemoPage> {
   @override
   Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: standardAppBar(title: 'Widget测试'),
+      body: _getBody(context),
+    );
+  }
+
+  Widget _getBody(BuildContext context) {
     return Center(
       child: Container(
         alignment: Alignment.center,
