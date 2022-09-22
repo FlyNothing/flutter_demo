@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/util/global_widget.dart';
 
+/// showModalBottomSheet和showBottomSheet
 class BottomSheetDemoPage extends StatelessWidget {
   const BottomSheetDemoPage({Key? key}) : super(key: key);
 

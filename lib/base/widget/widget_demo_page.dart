@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/common/util/text_style.dart';
 
+/// 测试State中获取Widget属性
 class WidgetDemoPage extends StatefulWidget {
   final String finalName = "widget-demo";
   const WidgetDemoPage({Key? key}) : super(key: key);

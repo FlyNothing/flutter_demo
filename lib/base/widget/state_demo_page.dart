@@ -6,6 +6,7 @@ import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/common/util/text_style.dart';
 import 'package:flutter_demo/common/vo/base_resp_vo.dart';
 
+/// StatefulWidget测试
 class StateDemoPage extends StatefulWidget {
   static const String routeName = "/state-demo";
 

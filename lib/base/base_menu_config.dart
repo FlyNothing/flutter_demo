@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/base/futuretimer/future_demo_page.dart';
 import 'package:flutter_demo/base/router/origin_demo_page.dart';
 import 'package:flutter_demo/base/widget/bottom_sheet_demo_page.dart';
+import 'package:flutter_demo/base/widget/listview_gridview_demo1_page.dart';
+import 'package:flutter_demo/base/widget/listview_gridview_demo2_page.dart';
 import 'package:flutter_demo/base/widget/state_demo_page.dart';
 import 'package:flutter_demo/base/widget/widget_demo_page.dart';
 
@@ -11,6 +13,8 @@ List<BaseMenuVO> baseMenuList = [
   BaseMenuVO("State测试", const StateDemoPage()),
   BaseMenuVO("底部弹窗测试", const BottomSheetDemoPage()),
   BaseMenuVO("FutureBuilder测试", const FutureDemoPage()),
+  BaseMenuVO("ListView和GridView测试1", const ListviewGridviewDemo1Page()),
+  BaseMenuVO("ListView和GridView测试2", const ListviewGridviewDemo2Page()),
 ];
 
 class BaseMenuVO {
