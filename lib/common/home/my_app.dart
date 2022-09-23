@@ -12,16 +12,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ScreenUtil.init(context, designSize: const Size(375, 667));
-    initEasyLoading(); // 初始化EasyLoading
-    return MaterialApp(
-      title: 'flutter_demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      onGenerateRoute: GlobalRouter().onGenerateRoute,
-      home: const MyHomePage(),
-      builder: EasyLoading.init(), // 初始化EasyLoading
+    initEasyLoading(); //  初始化EasyLoading
+    return ScreenUtilInit(
+      designSize: const Size(390, 840), // 默认Size(360, 690)
+      splitScreenMode: true,
+      builder: (context, child) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false, // 去掉右上角debug贴纸
+          theme: ThemeData(
+            primarySwatch: Colors.blue,
+          ),
+          home: const MyHomePage(),
+          onGenerateRoute: GlobalRouter().onGenerateRoute,
+          builder: EasyLoading.init(),
+        );
+      },
     );
   }
 }
