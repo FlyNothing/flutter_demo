@@ -21,47 +21,15 @@ class BoxFitPage extends StatelessWidget {
   }
 
   List<Widget> genImageList() {
-    return [
-      getImage("assets/images/image1.jpg"),
-      getImage("assets/images/image1_vertical.jpg"),
-      getImage("assets/images/image2.jpg"),
-      getImage("assets/images/image2_vertical.jpg"),
-      Divider(color: _color, thickness: 1),
-      getImage("assets/images/image1.jpg", fit: BoxFit.contain),
-      getImage("assets/images/image1_vertical.jpg", fit: BoxFit.contain),
-      getImage("assets/images/image2.jpg", fit: BoxFit.contain),
-      getImage("assets/images/image2_vertical.jpg", fit: BoxFit.contain),
-      Divider(color: _color, thickness: 1),
-      getImage("assets/images/image1.jpg", fit: BoxFit.cover),
-      getImage("assets/images/image1_vertical.jpg", fit: BoxFit.cover),
-      getImage("assets/images/image2.jpg", fit: BoxFit.cover),
-      getImage("assets/images/image2_vertical.jpg", fit: BoxFit.cover),
-      Divider(color: _color, thickness: 1),
-      getImage("assets/images/image1.jpg", fit: BoxFit.fill),
-      getImage("assets/images/image1_vertical.jpg", fit: BoxFit.fill),
-      getImage("assets/images/image2.jpg", fit: BoxFit.fill),
-      getImage("assets/images/image2_vertical.jpg", fit: BoxFit.fill),
-      Divider(color: _color, thickness: 1),
-      getImage("assets/images/image1.jpg", fit: BoxFit.fitHeight),
-      getImage("assets/images/image1_vertical.jpg", fit: BoxFit.fitHeight),
-      getImage("assets/images/image2.jpg", fit: BoxFit.fitHeight),
-      getImage("assets/images/image2_vertical.jpg", fit: BoxFit.fitHeight),
-      Divider(color: _color, thickness: 1),
-      getImage("assets/images/image1.jpg", fit: BoxFit.fitWidth),
-      getImage("assets/images/image1_vertical.jpg", fit: BoxFit.fitWidth),
-      getImage("assets/images/image2.jpg", fit: BoxFit.fitWidth),
-      getImage("assets/images/image2_vertical.jpg", fit: BoxFit.fitWidth),
-      Divider(color: _color, thickness: 1),
-      getImage("assets/images/image1.jpg", fit: BoxFit.none),
-      getImage("assets/images/image1_vertical.jpg", fit: BoxFit.none),
-      getImage("assets/images/image2.jpg", fit: BoxFit.none),
-      getImage("assets/images/image2_vertical.jpg", fit: BoxFit.none),
-      Divider(color: _color, thickness: 1),
-      getImage("assets/images/image1.jpg", fit: BoxFit.scaleDown),
-      getImage("assets/images/image1_vertical.jpg", fit: BoxFit.scaleDown),
-      getImage("assets/images/image2.jpg", fit: BoxFit.scaleDown),
-      getImage("assets/images/image2_vertical.jpg", fit: BoxFit.scaleDown),
-    ];
+    List<Widget> res = [];
+    for (var boxFit in BoxFit.values) {
+      res.add(getImage("assets/images/image1.jpg", fit: boxFit));
+      res.add(getImage("assets/images/image1_vertical.jpg", fit: boxFit));
+      res.add(getImage("assets/images/image2.jpg", fit: boxFit));
+      res.add(getImage("assets/images/image2_vertical.jpg", fit: boxFit));
+      res.add(Divider(color: _color, thickness: 1));
+    }
+    return res;
   }
 
   Container getImage(String image, {BoxFit? fit}) {

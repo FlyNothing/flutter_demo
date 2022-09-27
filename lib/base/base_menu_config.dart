@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/base/enumpage/blend_mode_page.dart';
 import 'package:flutter_demo/base/enumpage/box_fit_page.dart';
 import 'package:flutter_demo/base/futuretimer/future_demo_page.dart';
 import 'package:flutter_demo/base/router/origin_demo_page.dart';
@@ -17,6 +18,7 @@ List<BaseMenuVO> baseMenuList = [
   BaseMenuVO("ListView和GridView测试1", const ListviewGridviewDemo1Page()),
   BaseMenuVO("ListView和GridView测试2", const ListviewGridviewDemo2Page()),
   BaseMenuVO("BoxFit模式", const BoxFitPage()),
+  BaseMenuVO("BlendMode模式", const BlendModePage()),
 ];
 
 class BaseMenuVO {
