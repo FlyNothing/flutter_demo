@@ -13,7 +13,6 @@ class CircularProgressIndicatorDemoPage extends StatefulWidget {
 class _CircularProgressIndicatorDemoPageState extends State<CircularProgressIndicatorDemoPage> with SingleTickerProviderStateMixin {
   final int _durationSeconds = 10;
   late AnimationController _controller;
-  late Animation<double> _curveAnimation;
   late Animation<Color?> _colorAnimation;
 
   @override
@@ -21,8 +20,9 @@ class _CircularProgressIndicatorDemoPageState extends State<CircularProgressIndi
     super.initState();
     _controller = AnimationController(vsync: this, duration: Duration(seconds: _durationSeconds));
     _controller.forward();
-    _curveAnimation = CurvedAnimation(parent: _controller, curve: Curves.linear);
-    _colorAnimation = ColorTween(begin: Colors.blue, end: Colors.blue).animate(_curveAnimation);
+    _colorAnimation = ColorTween(begin: Colors.blue, end: Colors.blue).animate(
+      CurvedAnimation(parent: _controller, curve: Curves.linear),
+    );
   }
 
   @override
