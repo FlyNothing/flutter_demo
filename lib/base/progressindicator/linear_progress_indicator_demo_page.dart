@@ -58,8 +58,8 @@ class _LinearProgressIndicatorDemoPageState extends State<LinearProgressIndicato
                   SizedBox(
                       width: 1.sw - 50.w,
                       child: LinearProgressIndicator(
-                        minHeight: 10.h,
-                        backgroundColor: Colors.blue[100],
+                        minHeight: 6.h,
+                        backgroundColor: Colors.grey[400],
                         valueColor: _colorAnimation,
                         value: _controller.value,
                       ))

@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/base/enumpage/blend_mode_page.dart';
 import 'package:flutter_demo/base/enumpage/box_fit_page.dart';
 import 'package:flutter_demo/base/futuretimer/future_demo_page.dart';
-import 'package:flutter_demo/base/progressindicator/circular_progress_indicator_demo_page.dart';
-import 'package:flutter_demo/base/progressindicator/linear_progress_indicator_demo_page.dart';
+import 'package:flutter_demo/base/progressindicator/base_progress_indicator_menu_page.dart';
 import 'package:flutter_demo/base/router/origin_demo_page.dart';
 import 'package:flutter_demo/base/theme/theme_demo_page.dart';
 import 'package:flutter_demo/base/widget/bottom_sheet_demo_page.dart';
@@ -22,8 +21,7 @@ List<BaseMenuVO> baseMenuList = [
   BaseMenuVO("ListView和GridView测试2", const ListviewGridviewDemo2Page()),
   BaseMenuVO("BoxFit模式", const BoxFitPage()),
   BaseMenuVO("BlendMode模式", const BlendModePage()),
-  BaseMenuVO("圆形指示器", const CircularProgressIndicatorDemoPage()),
-  BaseMenuVO("线性指示器", const LinearProgressIndicatorDemoPage()),
+  BaseMenuVO("指示器", const BaseProgressIndicatorMenuPage()),
   BaseMenuVO("主题", const ThemeDemoPage()),
 ];
 
