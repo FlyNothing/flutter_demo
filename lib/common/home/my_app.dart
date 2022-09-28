@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/base/base_menu_page.dart';
 import 'package:flutter_demo/common/router/global_router.dart';
+import 'package:flutter_demo/common/util/text_style.dart';
 import 'package:flutter_demo/issue/issue_menu_page.dart';
 import 'package:flutter_demo/plugin/easyloading/init.dart';
 import 'package:flutter_demo/plugin/plugin_menu_page.dart';
@@ -21,6 +22,17 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false, // 去掉右上角debug贴纸
           theme: ThemeData(
             primarySwatch: Colors.blue,
+            textButtonTheme: TextButtonThemeData(
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.blue),
+                minimumSize: MaterialStateProperty.all(Size(100.w, 40.h)),
+                shape: MaterialStateProperty.all(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.w),
+                  ),
+                ),
+              ),
+            ),
           ),
           home: const MyHomePage(),
           onGenerateRoute: GlobalRouter().onGenerateRoute,
@@ -68,7 +80,6 @@ class _MyHomePageState extends State<MyHomePage> {
         currentIndex: _selIndex,
         onTap: _onTap,
         type: BottomNavigationBarType.fixed,
-        fixedColor: Colors.green,
       ),
       body: _barList[_selIndex]['page'],
     );

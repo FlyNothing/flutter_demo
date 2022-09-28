@@ -5,6 +5,7 @@ import 'package:flutter_demo/base/futuretimer/future_demo_page.dart';
 import 'package:flutter_demo/base/progressindicator/circular_progress_indicator_demo_page.dart';
 import 'package:flutter_demo/base/progressindicator/linear_progress_indicator_demo_page.dart';
 import 'package:flutter_demo/base/router/origin_demo_page.dart';
+import 'package:flutter_demo/base/theme/theme_demo_page.dart';
 import 'package:flutter_demo/base/widget/bottom_sheet_demo_page.dart';
 import 'package:flutter_demo/base/widget/listview_gridview_demo1_page.dart';
 import 'package:flutter_demo/base/widget/listview_gridview_demo2_page.dart';
@@ -23,6 +24,7 @@ List<BaseMenuVO> baseMenuList = [
   BaseMenuVO("BlendMode模式", const BlendModePage()),
   BaseMenuVO("圆形指示器", const CircularProgressIndicatorDemoPage()),
   BaseMenuVO("线性指示器", const LinearProgressIndicatorDemoPage()),
+  BaseMenuVO("主题", const ThemeDemoPage()),
 ];
 
 class BaseMenuVO {
