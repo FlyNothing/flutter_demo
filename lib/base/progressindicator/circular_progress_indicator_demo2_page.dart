@@ -3,15 +3,15 @@ import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/common/util/text_style.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class CircularProgressIndicatorDemoPage extends StatefulWidget {
-  const CircularProgressIndicatorDemoPage({Key? key}) : super(key: key);
+class CircularProgressIndicatorDemo2Page extends StatefulWidget {
+  const CircularProgressIndicatorDemo2Page({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => _CircularProgressIndicatorDemoPageState();
+  State<StatefulWidget> createState() => _CircularProgressIndicatorDemo2PageState();
 }
 
-class _CircularProgressIndicatorDemoPageState extends State<CircularProgressIndicatorDemoPage> {
-  final int _percent = 0;
+class _CircularProgressIndicatorDemo2PageState extends State<CircularProgressIndicatorDemo2Page> {
+  int _percent = 0;
 
   @override
   void initState() {
@@ -76,7 +76,8 @@ class _CircularProgressIndicatorDemoPageState extends State<CircularProgressIndi
 
   void _calcPercent() async {
     for (int i = 0; i < 100; i++) {
-      await Future.delayed(const Duration(seconds: 100));
+      await Future.delayed(const Duration(milliseconds: 50));
+      _percent = i + 1;
       setState(() {});
     }
   }
