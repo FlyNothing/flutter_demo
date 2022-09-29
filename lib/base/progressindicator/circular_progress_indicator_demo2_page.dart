@@ -11,7 +11,7 @@ class CircularProgressIndicatorDemoPage extends StatefulWidget {
 }
 
 class _CircularProgressIndicatorDemoPageState extends State<CircularProgressIndicatorDemoPage> {
-  int _percent = 0;
+  final int _percent = 0;
 
   @override
   void initState() {
