@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/httperror/loading_page.dart';
 import 'package:flutter_demo/common/httperror/service_unavailable_page.dart';
-import 'package:flutter_demo/common/util/api_util.dart';
+import 'package:flutter_demo/common/util/api.dart';
 import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/common/util/text_style.dart';
 import 'package:flutter_demo/common/vo/base_resp_vo.dart';

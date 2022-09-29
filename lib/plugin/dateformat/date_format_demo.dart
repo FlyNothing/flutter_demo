@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:date_format/date_format.dart';
 
 /// uuu解析存在bug，只生成2位
