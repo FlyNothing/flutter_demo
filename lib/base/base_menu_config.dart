@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/base/bottomnavigationbar/navigation_bar_home_page.dart';
 import 'package:flutter_demo/base/enumpage/blend_mode_page.dart';
 import 'package:flutter_demo/base/enumpage/box_fit_page.dart';
 import 'package:flutter_demo/base/futuretimer/future_demo_page.dart';
@@ -23,6 +24,7 @@ List<BaseMenuVO> baseMenuList = [
   BaseMenuVO("BlendMode模式", const BlendModePage()),
   BaseMenuVO("指示器", const BaseProgressIndicatorMenuPage()),
   BaseMenuVO("主题", const ThemeDemoPage()),
+  BaseMenuVO("隐藏NavigationBar", const NavigationBarHomePage()),
 ];
 
 class BaseMenuVO {
