@@ -16,6 +16,7 @@ class ImageCropperPage extends StatefulWidget {
 
 class ImageCropperPageState extends State<ImageCropperPage> {
   final ImagePicker _imagePicker = ImagePicker();
+  final ImageCropper _imageCropper = ImageCropper();
   CroppedFile? _croppedFile;
 
   @override
@@ -69,8 +70,15 @@ class ImageCropperPageState extends State<ImageCropperPage> {
   }
 
   Future<void> _cropImage(File image) async {
-    CroppedFile? croppedFile = await ImageCropper().cropImage(
+    CroppedFile? croppedFile = await _imageCropper.cropImage(
       sourcePath: image.path,
+      // 当设置aspectRatio后将锁定裁剪器，用户无法调整。
+      // 可以通过AndroidUiSettings.lockAspectRatio取消锁定。
+      // aspectRatio: const CropAspectRatio(ratioX: 1, ratioY: 2),
+
+      // 控制裁剪菜单视图的纵横比列表
+      // 如设置aspectRatio则纵横比被锁定，无法选择
+      // 可以被AndroidUiSettings.initAspectRatio覆盖后，无法选择
       aspectRatioPresets: [
         CropAspectRatioPreset.square,
         CropAspectRatioPreset.ratio3x2,
@@ -78,13 +86,16 @@ class ImageCropperPageState extends State<ImageCropperPage> {
         CropAspectRatioPreset.ratio4x3,
         CropAspectRatioPreset.ratio16x9
       ],
+      // 设置裁剪器形状：圆形和矩形
+      // cropStyle: CropStyle.circle,
       uiSettings: [
         AndroidUiSettings(
-            toolbarTitle: 'Cropper',
-            toolbarColor: Colors.blue,
-            toolbarWidgetColor: Colors.white,
-            initAspectRatio: CropAspectRatioPreset.square,
-            lockAspectRatio: false),
+          toolbarTitle: 'Cropper',
+          toolbarColor: Colors.blue,
+          toolbarWidgetColor: Colors.white,
+          initAspectRatio: CropAspectRatioPreset.square,
+          lockAspectRatio: false,
+        ),
         IOSUiSettings(
           title: 'Cropper',
         ),
