@@ -65,12 +65,12 @@ class _ImagePickerImageDemoPageState extends State<ImagePickerImageDemoPage> {
     );
   }
 
-  Container _getImageView(Image imag) {
+  Container _getImageView(Image image) {
     return Container(
       decoration: BoxDecoration(border: Border.all(width: 1)),
       width: 0.4.sw,
       height: 0.4.sh,
-      child: imag,
+      child: image,
     );
   }
 
