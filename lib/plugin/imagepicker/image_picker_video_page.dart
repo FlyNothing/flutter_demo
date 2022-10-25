@@ -7,14 +7,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:video_player/video_player.dart';
 
-class ImagePickerVideoDemoPage extends StatefulWidget {
-  const ImagePickerVideoDemoPage({Key? key}) : super(key: key);
+class ImagePickerVideoPage extends StatefulWidget {
+  const ImagePickerVideoPage({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => _ImagePickerVideoDemoPageState();
+  State<StatefulWidget> createState() => _ImagePickerVideoPageState();
 }
 
-class _ImagePickerVideoDemoPageState extends State<ImagePickerVideoDemoPage> {
+class _ImagePickerVideoPageState extends State<ImagePickerVideoPage> {
   final ImagePicker _imagePicker = ImagePicker();
   File? file;
   VideoPlayerController? _controller;

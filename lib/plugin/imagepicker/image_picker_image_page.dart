@@ -6,14 +6,14 @@ import 'package:flutter_demo/common/util/text_style.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:image_picker/image_picker.dart';
 
-class ImagePickerImageDemoPage extends StatefulWidget {
-  const ImagePickerImageDemoPage({Key? key}) : super(key: key);
+class ImagePickerImagePage extends StatefulWidget {
+  const ImagePickerImagePage({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => _ImagePickerImageDemoPageState();
+  State<StatefulWidget> createState() => _ImagePickerImagePageState();
 }
 
-class _ImagePickerImageDemoPageState extends State<ImagePickerImageDemoPage> {
+class _ImagePickerImagePageState extends State<ImagePickerImagePage> {
   final ImagePicker _imagePicker = ImagePicker();
   final List<Image> _images = List.empty(growable: true);
 

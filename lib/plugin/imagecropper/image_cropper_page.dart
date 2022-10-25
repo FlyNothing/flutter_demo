@@ -22,7 +22,7 @@ class ImageCropperPageState extends State<ImageCropperPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBarStandard(title: 'image_cropper测试'),
+      appBar: appBarStandard(title: 'ImageCropper测试'),
       body: _getBody(context),
     );
   }
