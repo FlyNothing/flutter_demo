@@ -15,18 +15,17 @@ class FlutterDatePickerTimelinePage extends StatefulWidget {
 }
 
 class FlutterDatePickerTimelinePageState extends State<FlutterDatePickerTimelinePage> {
-  late DateTime _selectDay; // 当前日期
+  late DateTime _selectDay = DateTime.now(); // 当前日期
 
   @override
   void initState() {
     super.initState();
-    _selectDay = DateTime.now();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBarStandard(title: '水平日期选择器测试'),
+      appBar: appBarStandard(title: '水平日期选择器测试2'),
       body: _getBody(context),
     );
   }

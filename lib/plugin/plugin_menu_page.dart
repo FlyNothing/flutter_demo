@@ -16,7 +16,7 @@ class PluginMenuPage extends StatelessWidget {
   Widget _getBody() {
     return ListView.builder(
       itemBuilder: (context, index) => ListTile(
-        leading: Text(pluginMenuList[index].name + pluginMenuList[index].code),
+        leading: Text("${pluginMenuList[index].name}  ${pluginMenuList[index].code}"),
         trailing: IconButton(
           onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => pluginMenuList[index].page)),
           icon: Icon(
