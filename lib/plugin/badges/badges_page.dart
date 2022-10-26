@@ -1,8 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/util/global_widget.dart';
-import 'package:flutter_demo/common/util/text_style.dart';
-import 'package:flutter_demo/plugin/easyloading/page/easy_loading_page.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
 class BadgesPage extends StatelessWidget {
