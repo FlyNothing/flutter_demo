@@ -16,3 +16,11 @@ Future<BaseRespVo> getTest() async {
   respVO = baseRespVoFromJson(resp.toString());
   return respVO;
 }
+
+// 下载图片
+Future<Response> downloadHttpFile(String url) async {
+  return await Dio().get(
+    url,
+    options: Options(responseType: ResponseType.bytes),
+  );
+}
