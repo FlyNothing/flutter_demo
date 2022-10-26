@@ -12,3 +12,10 @@ AppBar appBarStandard({required String title}) {
     ),
   );
 }
+
+TextButton textButtonStandard(String text, Function()? onPressed) {
+  return TextButton(
+    onPressed: onPressed,
+    child: Text(text, style: TextStyleUtil.size14W400(color: Colors.white)),
+  );
+}

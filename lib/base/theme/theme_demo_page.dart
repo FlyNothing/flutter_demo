@@ -38,13 +38,7 @@ class ThemeDemoPage extends StatelessWidget {
 
   Center _getButton() {
     return Center(
-      child: TextButton(
-        onPressed: () {},
-        child: Text(
-          "Button",
-          style: TextStyleUtil.size14W400(color: const Color.fromRGBO(255, 255, 255, 1)),
-        ),
-      ),
+      child: textButtonStandard("Button", () {}),
     );
   }
 }

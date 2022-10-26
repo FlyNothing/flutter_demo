@@ -44,14 +44,8 @@ class _ImagePickerVideoPageState extends State<ImagePickerVideoPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  TextButton(
-                    onPressed: () => _pickVideo(ImageSource.camera),
-                    child: Text("拍照", style: TextStyleUtil.size18W400(color: Colors.white)),
-                  ),
-                  TextButton(
-                    onPressed: () => _pickVideo(ImageSource.gallery),
-                    child: Text("相册", style: TextStyleUtil.size18W400(color: Colors.white)),
-                  ),
+                  textButtonStandard("拍照", () => _pickVideo(ImageSource.camera)),
+                  textButtonStandard("相册", () => _pickVideo(ImageSource.gallery)),
                 ],
               ),
               Padding(padding: EdgeInsets.symmetric(vertical: 10.h)),

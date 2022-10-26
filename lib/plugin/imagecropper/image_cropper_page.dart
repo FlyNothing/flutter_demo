@@ -35,10 +35,7 @@ class ImageCropperPageState extends State<ImageCropperPage> {
           child: Column(
             children: [
               Padding(padding: EdgeInsets.symmetric(vertical: 10.h)),
-              TextButton(
-                onPressed: () => _pickImage(),
-                child: Text("相册", style: TextStyleUtil.size18W400(color: Colors.white)),
-              ),
+              textButtonStandard("相册", () => _pickImage()),
               Padding(padding: EdgeInsets.symmetric(vertical: 10.h)),
               _getImageView()
             ],

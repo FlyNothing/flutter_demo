@@ -36,18 +36,9 @@ class _ImagePickerImagePageState extends State<ImagePickerImagePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  TextButton(
-                    onPressed: () => _pickImage(ImageSource.camera),
-                    child: Text("拍照", style: TextStyleUtil.size18W400(color: Colors.white)),
-                  ),
-                  TextButton(
-                    onPressed: () => _pickImage(ImageSource.gallery),
-                    child: Text("相册", style: TextStyleUtil.size18W400(color: Colors.white)),
-                  ),
-                  TextButton(
-                    onPressed: () => _pickMultiImage(),
-                    child: Text("相册列表", style: TextStyleUtil.size18W400(color: Colors.white)),
-                  ),
+                  textButtonStandard("拍照", () => _pickImage(ImageSource.camera)),
+                  textButtonStandard("相册", () => _pickImage(ImageSource.gallery)),
+                  textButtonStandard("相册列表", () => _pickMultiImage()),
                 ],
               ),
               Padding(padding: EdgeInsets.symmetric(vertical: 10.h)),

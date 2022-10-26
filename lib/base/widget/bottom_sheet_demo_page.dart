@@ -20,25 +20,19 @@ class BottomSheetDemoPage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        TextButton(
-          onPressed: () {
-            showBottomSheet(
-              context: context,
-              builder: (context) => _getBottomSheet(),
-            );
-          },
-          child: const Text("showBottomSheet"),
-        ),
-        TextButton(
-          onPressed: () {
-            showModalBottomSheet(
-              barrierColor: Colors.black54,
-              context: context,
-              builder: (context) => _getBottomSheet(),
-            );
-          },
-          child: const Text("showModalBottomSheet"),
-        )
+        textButtonStandard("showBottomSheet", () {
+          showBottomSheet(
+            context: context,
+            builder: (context) => _getBottomSheet(),
+          );
+        }),
+        textButtonStandard("showModalBottomSheet", () {
+          showModalBottomSheet(
+            barrierColor: Colors.black54,
+            context: context,
+            builder: (context) => _getBottomSheet(),
+          );
+        }),
       ],
     );
   }

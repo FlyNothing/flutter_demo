@@ -33,12 +33,7 @@ class BadgesPage extends StatelessWidget {
           child: Badge(
             badgeContent: const Text('2'),
             position: BadgePosition.bottomStart(),
-            child: TextButton(
-                onPressed: () {},
-                child: Text(
-                  "Button",
-                  style: TextStyleUtil.size14W400(color: Colors.black),
-                )),
+            child: textButtonStandard("Button", () {}),
           ),
         ),
         Padding(

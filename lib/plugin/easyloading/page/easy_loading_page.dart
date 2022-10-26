@@ -41,41 +41,41 @@ class _EasyLoadingPageState extends State<EasyLoadingPage> {
         // runAlignment: WrapAlignment.center,
         // crossAxisAlignment: WrapCrossAlignment.center,
         children: [
-          _getTextButton('push', () {
+          textButtonStandard('push', () {
             _timer?.cancel();
             Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => const TestPage()));
           }),
-          _getTextButton('dismiss', () async {
+          textButtonStandard('dismiss', () async {
             _timer?.cancel();
             await EasyLoading.dismiss();
           }),
-          _getTextButton('show', () async {
+          textButtonStandard('show', () async {
             _timer?.cancel();
             await EasyLoading.show(
               status: 'loading...',
               maskType: EasyLoadingMaskType.black,
             );
           }),
-          _getTextButton('showInfo', () async {
+          textButtonStandard('showInfo', () async {
             _timer?.cancel();
             await EasyLoading.showInfo(
               'loading...',
               maskType: EasyLoadingMaskType.black,
             );
           }),
-          _getTextButton('showToast', () {
+          textButtonStandard('showToast', () {
             _timer?.cancel();
             EasyLoading.showToast('Toast');
           }),
-          _getTextButton('showSuccess', () async {
+          textButtonStandard('showSuccess', () async {
             _timer?.cancel();
             await EasyLoading.showSuccess('Great Success!');
           }),
-          _getTextButton('showError', () {
+          textButtonStandard('showError', () {
             _timer?.cancel();
             EasyLoading.showError('Failed with Error');
           }),
-          _getTextButton(
+          textButtonStandard(
             'showProgress',
             () {
               _progress = 0;
@@ -91,16 +91,6 @@ class _EasyLoadingPageState extends State<EasyLoadingPage> {
             },
           ),
         ],
-      ),
-    );
-  }
-
-  TextButton _getTextButton(String text, Function()? onPressed) {
-    return TextButton(
-      onPressed: onPressed,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-        child: Text(text),
       ),
     );
   }
