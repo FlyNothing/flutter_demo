@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/plugin/badges/badges_page.dart';
 import 'package:flutter_demo/plugin/cachednetworkimage/cached_network_image_page.dart';
-import 'package:flutter_demo/plugin/date_picker_timeline/date_picker_timeline_page.dart';
+import 'package:flutter_demo/plugin/datepickertimeline/date_picker_timeline_page.dart';
 import 'package:flutter_demo/plugin/flutterdatepickertimeline/flutter_date_picker_timeline_page.dart';
 import 'package:flutter_demo/plugin/easyloading/page/easy_loading_page.dart';
 import 'package:flutter_demo/plugin/easyrefresh/easy_refresh_page.dart';
