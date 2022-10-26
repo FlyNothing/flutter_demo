@@ -26,7 +26,7 @@ class RouterDemoPage extends StatelessWidget {
       child: Container(
         alignment: Alignment.center,
         decoration: BoxDecoration(border: Border.all(width: 1, color: Colors.blue)),
-        child: Text("This is a router page. argMap = $argu", textAlign: TextAlign.center, style: TextStyleUtil.size16W500(color: Colors.blue)),
+        child: Text("This is a router page. argMap = $argu", textAlign: TextAlign.center, style: size16W500(color: Colors.blue)),
       ),
     );
   }

@@ -32,7 +32,7 @@ class _SharedPreferencesPageState extends State<SharedPreferencesPage> {
     return ListView(
       children: [
         ListTile(
-          leading: Text("int = $_intValue", style: TextStyleUtil.size18W600()),
+          leading: Text("int = $_intValue", style: size18W600()),
           title: IconButton(onPressed: _addInt, icon: const Icon(Icons.exposure_plus_1)),
           trailing: IconButton(onPressed: _plusInt, icon: const Icon(Icons.exposure_minus_1)),
         ),

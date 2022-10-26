@@ -56,7 +56,7 @@ class _StateDemoPageState extends State<StateDemoPage> {
   Widget genContainer() {
     return Container(
       alignment: Alignment.center,
-      child: Text("页面加载完成", style: TextStyleUtil.size16W400()),
+      child: Text("页面加载完成", style: size16W400()),
     );
   }
 }

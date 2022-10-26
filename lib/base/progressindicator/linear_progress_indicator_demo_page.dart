@@ -52,7 +52,7 @@ class _LinearProgressIndicatorDemoPageState extends State<LinearProgressIndicato
                     padding: EdgeInsets.only(top: 100.h, bottom: 15.h),
                     child: Text(
                       "${(_controller.value * 100).round()}%",
-                      style: TextStyleUtil.size16W500(color: Colors.blue),
+                      style: size16W500(color: Colors.blue),
                     ),
                   ),
                   SizedBox(
@@ -69,7 +69,7 @@ class _LinearProgressIndicatorDemoPageState extends State<LinearProgressIndicato
           ),
           Padding(
             padding: EdgeInsets.only(top: 40.h),
-            child: Text("正在加载中", style: TextStyleUtil.size16W600(color: Colors.blue)),
+            child: Text("正在加载中", style: size16W600(color: Colors.blue)),
           ),
         ],
       ),

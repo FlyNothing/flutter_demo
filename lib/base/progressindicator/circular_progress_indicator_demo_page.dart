@@ -76,7 +76,7 @@ class _CircularProgressIndicatorDemoPageState extends State<CircularProgressIndi
               ),
               Text(
                 "${(_controller.value * 100).round()}%",
-                style: TextStyleUtil.size16W400(color: Colors.blue),
+                style: size16W400(color: Colors.blue),
               )
             ],
           );
@@ -88,7 +88,7 @@ class _CircularProgressIndicatorDemoPageState extends State<CircularProgressIndi
   Padding _getContent() {
     return Padding(
       padding: EdgeInsets.only(top: 40.h, bottom: 40.h),
-      child: Text("正在加载中", style: TextStyleUtil.size16W600(color: Colors.blue)),
+      child: Text("正在加载中", style: size16W600(color: Colors.blue)),
     );
   }
 }

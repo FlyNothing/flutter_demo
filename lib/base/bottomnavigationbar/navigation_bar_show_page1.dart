@@ -17,7 +17,7 @@ class NavigationBarShowPage1 extends StatelessWidget {
     return Center(
       child: Text(
         "NavigationBarShowPage1",
-        style: TextStyleUtil.size18W400(color: Colors.green),
+        style: size18W400(color: Colors.green),
       ),
     );
   }

@@ -31,11 +31,11 @@ class NavigationBarHiddenPageState extends State<NavigationBarHiddenPage> {
           child: visible
               ? Text(
                   "Hide NavigationBar",
-                  style: TextStyleUtil.size18W400(color: Colors.red),
+                  style: size18W400(color: Colors.red),
                 )
               : Text(
                   "Show NavigationBar",
-                  style: TextStyleUtil.size18W400(color: Colors.green),
+                  style: size18W400(color: Colors.green),
                 )),
     );
   }

@@ -41,7 +41,7 @@ class BoxFitPage extends StatelessWidget {
         ),
         child: Align(
           alignment: Alignment.topCenter,
-          child: Text(fit == null ? "Origin" : fit.toString(), style: TextStyleUtil.size16W600(color: _color)),
+          child: Text(fit == null ? "Origin" : fit.toString(), style: size16W600(color: _color)),
         ));
   }
 }

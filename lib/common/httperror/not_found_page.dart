@@ -13,7 +13,7 @@ class HttpNotFoundPage extends StatelessWidget {
   Container getTextContainer() {
     return Container(
       alignment: Alignment.center,
-      child: Text("找不到页面", style: TextStyleUtil.size16W400(color: const Color.fromRGBO(169, 169, 169, 1))),
+      child: Text("找不到页面", style: size16W400(color: const Color.fromRGBO(169, 169, 169, 1))),
     );
   }
 }

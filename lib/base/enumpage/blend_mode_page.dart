@@ -41,7 +41,7 @@ class BlendModePage extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.topCenter,
-            child: Text(colorBlendMode.toString(), style: TextStyleUtil.size12W400(color: Colors.black)),
+            child: Text(colorBlendMode.toString(), style: size12W400(color: Colors.black)),
           )
         ],
       ),

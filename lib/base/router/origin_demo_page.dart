@@ -22,7 +22,7 @@ class OriginDemoPage extends StatelessWidget {
         child: Container(
           alignment: Alignment.center,
           decoration: BoxDecoration(border: Border.all(width: 1, color: Colors.red)),
-          child: Text("This is a home page.", textAlign: TextAlign.center, style: TextStyleUtil.size16W500(color: Colors.red)),
+          child: Text("This is a home page.", textAlign: TextAlign.center, style: size16W500(color: Colors.red)),
         ),
       ),
       onTap: () {

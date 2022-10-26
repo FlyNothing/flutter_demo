@@ -32,7 +32,7 @@ class ListviewGridviewDemo2Page extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Text(
         title,
-        style: TextStyleUtil.size16W600(),
+        style: size16W600(),
       ),
     );
   }

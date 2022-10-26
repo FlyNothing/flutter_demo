@@ -13,7 +13,7 @@ class HttpLoadingPage extends StatelessWidget {
   Container getTextContainer() {
     return Container(
       alignment: Alignment.center,
-      child: Text("正在加载中", style: TextStyleUtil.size16W400(color: Colors.red)),
+      child: Text("正在加载中", style: size16W400(color: Colors.red)),
     );
   }
 }

@@ -51,10 +51,10 @@ class DatePickerTimelinePageState extends State<DatePickerTimelinePage> {
         initialFocusedDate: _selectDay,
         itemHeight: 30.h,
         unselectedItemWidth: 30.w,
-        unselectedItemTextStyle: TextStyleUtil.size16W400(),
+        unselectedItemTextStyle: size16W400(),
         selectedItemWidth: 30.w,
         selectedItemBackgroundColor: Colors.blue,
-        selectedItemTextStyle: TextStyleUtil.size16W400(color: Colors.white),
+        selectedItemTextStyle: size16W400(color: Colors.white),
         itemRadius: 30.w,
         selectedItemMargin: const EdgeInsets.symmetric(horizontal: 10),
         unselectedItemMargin: const EdgeInsets.symmetric(horizontal: 10),
@@ -75,7 +75,7 @@ class DatePickerTimelinePageState extends State<DatePickerTimelinePage> {
       alignment: Alignment.centerLeft,
       child: Text(
         "您选择的日期是：${DateUtil.toDay(_selectDay)}",
-        style: TextStyleUtil.size14W600(),
+        style: size14W600(),
       ),
     );
   }
