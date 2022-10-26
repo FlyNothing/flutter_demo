@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/plugin/easyloading/page/test_page.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class EasyLoadingPage extends StatefulWidget {
   const EasyLoadingPage({Key? key}) : super(key: key);
@@ -38,8 +39,8 @@ class _EasyLoadingPageState extends State<EasyLoadingPage> {
   Widget _getBody(BuildContext context) {
     return SingleChildScrollView(
       child: Wrap(
-        // runAlignment: WrapAlignment.center,
-        // crossAxisAlignment: WrapCrossAlignment.center,
+        spacing: 20.w,
+        runSpacing: 10.h,
         children: [
           textButtonStandard('push', () {
             _timer?.cancel();
