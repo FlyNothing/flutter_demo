@@ -9,10 +9,10 @@ import 'package:qr_code_scanner/qr_code_scanner.dart';
 class QRCodeScannerPage extends StatefulWidget {
   const QRCodeScannerPage({Key? key}) : super(key: key);
   @override
-  State<StatefulWidget> createState() => ScanCodePageState();
+  State<StatefulWidget> createState() => _QRCodeScannerPageState();
 }
 
-class ScanCodePageState extends State<QRCodeScannerPage> {
+class _QRCodeScannerPageState extends State<QRCodeScannerPage> {
   QRViewController? _controller;
   Barcode? _barcode;
   final GlobalKey key = GlobalKey(debugLabel: 'ScanCode');

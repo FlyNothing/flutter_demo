@@ -7,10 +7,10 @@ class NavigationBarHiddenPage extends StatefulWidget {
   final Function(bool visiable) _setVisible;
 
   @override
-  State<StatefulWidget> createState() => NavigationBarHiddenPageState();
+  State<StatefulWidget> createState() => _NavigationBarHiddenPageState();
 }
 
-class NavigationBarHiddenPageState extends State<NavigationBarHiddenPage> {
+class _NavigationBarHiddenPageState extends State<NavigationBarHiddenPage> {
   bool visible = true;
   @override
   Widget build(BuildContext context) {
