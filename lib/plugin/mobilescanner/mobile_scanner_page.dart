@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 
 class MobileScannerPage extends StatefulWidget {
@@ -77,6 +78,18 @@ class _MobileScannerPageState extends State<MobileScannerPage> {
             children: [
               _getOperateButton(Icons.flashlight_on, () => _controller.toggleTorch()),
               _getOperateButton(Platform.isAndroid ? Icons.flip_camera_android : Icons.flip_camera_ios, () => _controller.switchCamera()),
+              _getOperateButton(Icons.image, () async {
+                XFile? xFile = await ImagePicker().pickImage(source: ImageSource.gallery);
+                if (xFile == null) {
+                  EasyLoading.showInfo("选择图片失败");
+                  return;
+                }
+                bool hasCode = await _controller.analyzeImage(xFile.path);
+                if (!hasCode) {
+                  EasyLoading.showInfo("图片解析二维码失败");
+                  return;
+                }
+              }),
             ],
           ),
         ],
