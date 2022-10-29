@@ -72,6 +72,7 @@ class ScanCodePageState extends State<QRCodeScannerPage> {
             children: [
               _getOperateButton(Icons.pause, () => _controller?.pauseCamera()),
               _getOperateButton(Icons.play_arrow, () => _controller?.resumeCamera()),
+              _getOperateButton(Icons.stop, () => _controller?.stopCamera()),
             ],
           ),
           Padding(padding: EdgeInsets.symmetric(vertical: 10.w)),
@@ -79,6 +80,7 @@ class ScanCodePageState extends State<QRCodeScannerPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               _getOperateButton(Icons.flashlight_on, () => _controller?.toggleFlash()),
+              _getOperateButton(Icons.invert_colors, () => _controller?.scanInvert(false)),
               _getOperateButton(Platform.isAndroid ? Icons.flip_camera_android : Icons.flip_camera_ios, () => _controller?.flipCamera()),
             ],
           ),
@@ -92,10 +94,7 @@ class ScanCodePageState extends State<QRCodeScannerPage> {
       height: 60.w,
       width: 60.w,
       margin: EdgeInsets.symmetric(horizontal: 10.w),
-      decoration: BoxDecoration(
-        color: const Color.fromRGBO(255, 255, 255, 0.15),
-        borderRadius: BorderRadius.circular(30.w),
-      ),
+      color: const Color.fromRGBO(255, 255, 255, 0.15),
       child: IconButton(
         iconSize: 30.w,
         icon: Icon(
@@ -120,6 +119,7 @@ class ScanCodePageState extends State<QRCodeScannerPage> {
         if (code == null) {
           return;
         }
+        _controller?.pauseCamera();
         EasyLoading.showInfo("扫描到的二维码是：$code", duration: const Duration(seconds: 3));
       });
     });
