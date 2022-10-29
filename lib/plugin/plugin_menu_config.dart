@@ -7,6 +7,7 @@ import 'package:flutter_demo/plugin/easyloading/page/easy_loading_page.dart';
 import 'package:flutter_demo/plugin/easyrefresh/easy_refresh_page.dart';
 import 'package:flutter_demo/plugin/imagecropper/image_cropper_page.dart';
 import 'package:flutter_demo/plugin/imagepicker/base_image_picker_menu_page.dart';
+import 'package:flutter_demo/plugin/mobilescanner/mobile_scanner_page.dart';
 import 'package:flutter_demo/plugin/pathprovider/path_provider_page.dart';
 import 'package:flutter_demo/plugin/qrcode/qr_code_page.dart';
 import 'package:flutter_demo/plugin/qrcodescanner/qr_code_scanner_page.dart';
@@ -25,6 +26,7 @@ List<PluginMenuVO> pluginMenuList = [
   PluginMenuVO("image_cropper", "图片裁剪", const ImageCropperPage()),
   PluginMenuVO("path_provider", "文件访问", const PathProviderPage()),
   PluginMenuVO("qr_code_scanner", "二维码扫码1", const QRCodeScannerPage()),
+  PluginMenuVO("mobile_scanner", "二维码扫码2", const MobileScannerPage()),
 ];
 
 class PluginMenuVO {
