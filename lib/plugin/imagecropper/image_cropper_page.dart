@@ -10,10 +10,10 @@ class ImageCropperPage extends StatefulWidget {
   const ImageCropperPage({super.key});
 
   @override
-  State<StatefulWidget> createState() => ImageCropperPageState();
+  State<StatefulWidget> createState() => _ImageCropperPageState();
 }
 
-class ImageCropperPageState extends State<ImageCropperPage> {
+class _ImageCropperPageState extends State<ImageCropperPage> {
   final ImagePicker _imagePicker = ImagePicker();
   final ImageCropper _imageCropper = ImageCropper();
   CroppedFile? _croppedFile;

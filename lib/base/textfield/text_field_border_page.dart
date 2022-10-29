@@ -6,10 +6,10 @@ class TextFieldBorderPage extends StatefulWidget {
   const TextFieldBorderPage({super.key});
 
   @override
-  State<StatefulWidget> createState() => TextFieldBorderPageState();
+  State<StatefulWidget> createState() => _TextFieldBorderPageState();
 }
 
-class TextFieldBorderPageState extends State<TextFieldBorderPage> {
+class _TextFieldBorderPageState extends State<TextFieldBorderPage> {
   final TextEditingController _controller1 = TextEditingController();
   final TextEditingController _controller2 = TextEditingController();
   final TextEditingController _controller3 = TextEditingController();

@@ -11,10 +11,10 @@ class FlutterDatePickerTimelinePage extends StatefulWidget {
   const FlutterDatePickerTimelinePage({super.key});
 
   @override
-  State<StatefulWidget> createState() => FlutterDatePickerTimelinePageState();
+  State<StatefulWidget> createState() => _FlutterDatePickerTimelinePageState();
 }
 
-class FlutterDatePickerTimelinePageState extends State<FlutterDatePickerTimelinePage> {
+class _FlutterDatePickerTimelinePageState extends State<FlutterDatePickerTimelinePage> {
   late DateTime _selectDay = DateTime.now(); // 当前日期
 
   @override
