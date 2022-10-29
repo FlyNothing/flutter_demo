@@ -80,7 +80,6 @@ class _QRCodeScannerPageState extends State<QRCodeScannerPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               _getOperateButton(Icons.flashlight_on, () => _controller?.toggleFlash()),
-              _getOperateButton(Icons.invert_colors, () => _controller?.scanInvert(false)),
               _getOperateButton(Platform.isAndroid ? Icons.flip_camera_android : Icons.flip_camera_ios, () => _controller?.flipCamera()),
             ],
           ),
@@ -89,7 +88,7 @@ class _QRCodeScannerPageState extends State<QRCodeScannerPage> {
     );
   }
 
-  _getOperateButton(IconData iconData, Function()? onPressed) {
+  Container _getOperateButton(IconData iconData, Function()? onPressed) {
     return Container(
       height: 60.w,
       width: 60.w,
