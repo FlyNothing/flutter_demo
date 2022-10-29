@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/util/text_style.dart';
 
-AppBar appBarStandard({required String title}) {
+AppBar appBarStandard({required String title, Color? backgroundColor}) {
   return AppBar(
     centerTitle: true,
     elevation: 0, // 取消阴影
+    backgroundColor: backgroundColor,
     title: Text(
       title,
       textAlign: TextAlign.center,
