@@ -12,6 +12,7 @@ import 'package:flutter_demo/plugin/mobilescanner/mobile_scanner_page.dart';
 import 'package:flutter_demo/plugin/pathprovider/path_provider_page.dart';
 import 'package:flutter_demo/plugin/qrcode/qr_code_page.dart';
 import 'package:flutter_demo/plugin/qrcodescanner/qr_code_scanner_page.dart';
+import 'package:flutter_demo/plugin/screenshot/screenshot_page.dart';
 import 'package:flutter_demo/plugin/sharedpreferences/shared_preferences_page.dart';
 
 List<PluginMenuVO> pluginMenuList = [
@@ -29,6 +30,7 @@ List<PluginMenuVO> pluginMenuList = [
   PluginMenuVO("path_provider", "文件访问", const PathProviderPage()),
   PluginMenuVO("qr_code_scanner", "二维码扫码1", const QRCodeScannerPage()),
   PluginMenuVO("mobile_scanner", "二维码扫码2", const MobileScannerPage()),
+  PluginMenuVO("screenshot", "截图", const ScreenshotPage()),
 ];
 
 class PluginMenuVO {
