@@ -6,6 +6,7 @@ import 'package:flutter_demo/plugin/flutterdatepickertimeline/flutter_date_picke
 import 'package:flutter_demo/plugin/easyloading/page/easy_loading_page.dart';
 import 'package:flutter_demo/plugin/easyrefresh/easy_refresh_page.dart';
 import 'package:flutter_demo/plugin/imagecropper/image_cropper_page.dart';
+import 'package:flutter_demo/plugin/imagegallerysaver/image_gallery_saver_page.dart';
 import 'package:flutter_demo/plugin/imagepicker/base_image_picker_menu_page.dart';
 import 'package:flutter_demo/plugin/mobilescanner/mobile_scanner_page.dart';
 import 'package:flutter_demo/plugin/pathprovider/path_provider_page.dart';
@@ -24,6 +25,7 @@ List<PluginMenuVO> pluginMenuList = [
   PluginMenuVO("badges", "徽标测试", const BadgesPage()),
   PluginMenuVO("image_picker", "图片选择", const BaseImagePickerMenuPage()),
   PluginMenuVO("image_cropper", "图片裁剪", const ImageCropperPage()),
+  PluginMenuVO("image_gallery_saver", "保存到相册", const ImageGallerySaverPage()),
   PluginMenuVO("path_provider", "文件访问", const PathProviderPage()),
   PluginMenuVO("qr_code_scanner", "二维码扫码1", const QRCodeScannerPage()),
   PluginMenuVO("mobile_scanner", "二维码扫码2", const MobileScannerPage()),
