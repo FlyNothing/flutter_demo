@@ -34,13 +34,16 @@ class _PathProviderPageState extends State<PathProviderPage> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         textButtonStandard("获取目录", () => showDirectorys()),
+        Padding(padding: EdgeInsets.symmetric(vertical: 10.h), child: Divider(thickness: 2.h)),
+        _getUrlTextField(),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
+            textButtonStandard("HttpGet到本地", () => _getHttpFile(_controller.text)),
             textButtonStandard("下载到本地", () => _downloadFile(_controller.text)),
-            _getUrlTextField(),
           ],
         ),
+        Padding(padding: EdgeInsets.symmetric(vertical: 10.h), child: Divider(thickness: 2.h)),
         textButtonStandard("读取本地文件", () => _loadLocalFile(_controller.text)),
         _localFile != null ? Image.file(_localFile as File) : const SizedBox.shrink(),
       ],
@@ -51,7 +54,7 @@ class _PathProviderPageState extends State<PathProviderPage> {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 10.w),
       height: 40.h,
-      width: 0.7.sw,
+      width: 1.sw,
       child: textFieldStandard(_controller, hintText: "请输入图片下载地址"),
     );
   }
@@ -115,9 +118,10 @@ class _PathProviderPageState extends State<PathProviderPage> {
     return extCacheDirs.map((dir) => dir.path).toList().join(",");
   }
 
-  Future<void> _downloadFile(String url) async {
+  /// Http Get存储到本地
+  Future<void> _getHttpFile(String url) async {
     // 下载文件
-    Response resp = await downloadHttpFile(url);
+    Response resp = await getHttpFile(url);
     List<int> dataList = resp.data as List<int>;
 
     // 存储到本地文件
@@ -125,6 +129,13 @@ class _PathProviderPageState extends State<PathProviderPage> {
     String path = "${dir.path}/${_getFileName(url)}";
     File newFile = File(path);
     await newFile.writeAsBytes(dataList);
+  }
+
+  /// 下载到本地
+  Future<void> _downloadFile(String url) async {
+    Directory dir = await getApplicationDocumentsDirectory();
+    String path = "${dir.path}/${_getFileName(url)}";
+    await download(url, path);
   }
 
   Future<void> _loadLocalFile(String url) async {

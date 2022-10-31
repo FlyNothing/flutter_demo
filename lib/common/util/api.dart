@@ -17,10 +17,15 @@ Future<BaseRespVo> getTest() async {
   return respVO;
 }
 
-// 下载图片
-Future<Response> downloadHttpFile(String url) async {
+// Get下载
+Future<Response> getHttpFile(String url) async {
   return await Dio().get(
     url,
     options: Options(responseType: ResponseType.bytes),
   );
+}
+
+// 下载图片
+Future<Response> download(String url, String savePath) async {
+  return await Dio().download(url, savePath);
 }
