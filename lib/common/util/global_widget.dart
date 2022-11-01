@@ -16,6 +16,9 @@ AppBar appBarStandard({required String title, Color? backgroundColor}) {
 
 TextButton textButtonStandard(String text, Function()? onPressed) {
   return TextButton(
+    style: ButtonStyle(
+      overlayColor: MaterialStateProperty.all(Colors.blue),
+    ),
     onPressed: onPressed,
     child: Text(text, style: size14W400(color: Colors.white)),
   );
