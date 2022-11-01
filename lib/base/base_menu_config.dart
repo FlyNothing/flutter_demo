@@ -4,6 +4,7 @@ import 'package:flutter_demo/base/enumpage/blend_mode_page.dart';
 import 'package:flutter_demo/base/enumpage/box_fit_page.dart';
 import 'package:flutter_demo/base/futuretimer/future_demo_page.dart';
 import 'package:flutter_demo/base/progressindicator/base_progress_indicator_menu_page.dart';
+import 'package:flutter_demo/base/repaintboundary/repaint_boundary_page.dart';
 import 'package:flutter_demo/base/router/origin_demo_page.dart';
 import 'package:flutter_demo/base/textfield/text_field_border_page.dart';
 import 'package:flutter_demo/base/theme/theme_demo_page.dart';
@@ -27,6 +28,7 @@ List<BaseMenuVO> baseMenuList = [
   BaseMenuVO("主题", const ThemeDemoPage()),
   BaseMenuVO("隐藏NavigationBar", const NavigationBarHomePage()),
   BaseMenuVO("文本框边框", const TextFieldBorderPage()),
+  BaseMenuVO("截图", const RepaintBoundaryPage()),
 ];
 
 class BaseMenuVO {
