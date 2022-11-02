@@ -4,6 +4,7 @@ import 'package:flutter_demo/base/enumpage/blend_mode_page.dart';
 import 'package:flutter_demo/base/enumpage/box_fit_page.dart';
 import 'package:flutter_demo/base/flexible/flexible_page.dart';
 import 'package:flutter_demo/base/futuretimer/future_page.dart';
+import 'package:flutter_demo/base/image/image_page.dart';
 import 'package:flutter_demo/base/progressindicator/base_progress_indicator_menu_page.dart';
 import 'package:flutter_demo/base/repaintboundary/repaint_boundary_page.dart';
 import 'package:flutter_demo/base/router/origin_page.dart';
@@ -31,6 +32,7 @@ List<BaseMenuVO> baseMenuList = [
   BaseMenuVO("文本框边框", const TextFieldBorderPage()),
   BaseMenuVO("截图", const RepaintBoundaryPage()),
   BaseMenuVO("Flexible和Expanded", FlexiblePage()),
+  BaseMenuVO("图片显示", const ImagePage()),
 ];
 
 class BaseMenuVO {
