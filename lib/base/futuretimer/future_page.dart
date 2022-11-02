@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/util/global_widget.dart';
 
-class FutureDemoPage extends StatelessWidget {
-  const FutureDemoPage({super.key});
+class FuturePage extends StatelessWidget {
+  const FuturePage({super.key});
 
   @override
   Widget build(BuildContext context) {

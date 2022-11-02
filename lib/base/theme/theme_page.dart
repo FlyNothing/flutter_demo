@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/util/global_widget.dart';
-import 'package:flutter_demo/common/util/text_style.dart';
 
-class ThemeDemoPage extends StatelessWidget {
-  const ThemeDemoPage({super.key});
+class ThemePage extends StatelessWidget {
+  const ThemePage({super.key});
 
   @override
   Widget build(BuildContext context) {

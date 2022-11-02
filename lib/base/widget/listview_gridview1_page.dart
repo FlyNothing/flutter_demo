@@ -5,8 +5,8 @@ import 'package:flutter_demo/common/util/text_style.dart';
 /// ListView嵌套Gridview <br/>
 /// ListView用于布局、可以下拉滑动页面 <br/>
 /// Gridview展示内容，不允许下拉且一次加载所有列表
-class ListviewGridviewDemo1Page extends StatelessWidget {
-  const ListviewGridviewDemo1Page({super.key});
+class ListviewGridview1Page extends StatelessWidget {
+  const ListviewGridview1Page({super.key});
 
   @override
   Widget build(BuildContext context) {

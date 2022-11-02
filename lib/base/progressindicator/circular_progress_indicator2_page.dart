@@ -3,14 +3,14 @@ import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/common/util/text_style.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class CircularProgressIndicatorDemo2Page extends StatefulWidget {
-  const CircularProgressIndicatorDemo2Page({Key? key}) : super(key: key);
+class CircularProgressIndicator2Page extends StatefulWidget {
+  const CircularProgressIndicator2Page({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => _CircularProgressIndicatorDemo2PageState();
+  State<StatefulWidget> createState() => _CircularProgressIndicator2PageState();
 }
 
-class _CircularProgressIndicatorDemo2PageState extends State<CircularProgressIndicatorDemo2Page> {
+class _CircularProgressIndicator2PageState extends State<CircularProgressIndicator2Page> {
   int _percent = 0;
 
   @override

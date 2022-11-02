@@ -3,14 +3,14 @@ import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/common/util/text_style.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class LinearProgressIndicatorDemoPage extends StatefulWidget {
-  const LinearProgressIndicatorDemoPage({Key? key}) : super(key: key);
+class LinearProgressIndicatorPage extends StatefulWidget {
+  const LinearProgressIndicatorPage({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => _LinearProgressIndicatorDemoPageState();
+  State<StatefulWidget> createState() => _LinearProgressIndicatorPageState();
 }
 
-class _LinearProgressIndicatorDemoPageState extends State<LinearProgressIndicatorDemoPage> with SingleTickerProviderStateMixin {
+class _LinearProgressIndicatorPageState extends State<LinearProgressIndicatorPage> with SingleTickerProviderStateMixin {
   final int _durationSeconds = 10;
   late AnimationController _controller;
   late Animation<Color?> _colorAnimation;

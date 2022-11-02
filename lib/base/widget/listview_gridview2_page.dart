@@ -5,8 +5,8 @@ import 'package:flutter_demo/common/util/text_style.dart';
 /// Stack嵌套Gridview <br/>
 /// Stack用于布局<br/>
 /// Gridview展示内容，允许下拉加载
-class ListviewGridviewDemo2Page extends StatelessWidget {
-  const ListviewGridviewDemo2Page({super.key});
+class ListviewGridview2Page extends StatelessWidget {
+  const ListviewGridview2Page({super.key});
 
   @override
   Widget build(BuildContext context) {

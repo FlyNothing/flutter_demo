@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/base/router/router_demo_page.dart';
+import 'package:flutter_demo/base/router/router_page.dart';
 import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/common/util/text_style.dart';
 
-/// OriginDemoPage结合RouterDemoPage一起，实现参数通过Route的Settings传递
-class OriginDemoPage extends StatelessWidget {
+/// OriginPage结合RouterPage一起，实现参数通过Route的Settings传递
+class OriginPage extends StatelessWidget {
   static const String routeName = "/router";
-  const OriginDemoPage({Key? key}) : super(key: key);
+  const OriginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class OriginDemoPage extends StatelessWidget {
         ),
       ),
       onTap: () {
-        Navigator.pushNamed(context, RouterDemoPage.routeName, arguments: {"page-title": "router"});
+        Navigator.pushNamed(context, RouterPage.routeName, arguments: {"page-title": "router"});
       },
     );
   }

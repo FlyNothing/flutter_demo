@@ -3,15 +3,15 @@ import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/common/util/text_style.dart';
 
 /// 测试State中获取Widget属性
-class WidgetDemoPage extends StatefulWidget {
+class WidgetPage extends StatefulWidget {
   final String finalName = "widget-demo";
-  const WidgetDemoPage({Key? key}) : super(key: key);
+  const WidgetPage({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => _WidgetDemoPageState();
+  State<StatefulWidget> createState() => _WidgetPageState();
 }
 
-class _WidgetDemoPageState extends State<WidgetDemoPage> {
+class _WidgetPageState extends State<WidgetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

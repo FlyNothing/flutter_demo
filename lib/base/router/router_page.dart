@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/common/util/text_style.dart';
 
-/// OriginDemoPage结合RouterDemoPage一起，实现参数通过Route的Settings传递
-class RouterDemoPage extends StatelessWidget {
+/// OriginPage结合RouterPage一起，实现参数通过Route的Settings传递
+class RouterPage extends StatelessWidget {
   static const String routeName = "/router-page";
-  const RouterDemoPage({Key? key}) : super(key: key);
+  const RouterPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

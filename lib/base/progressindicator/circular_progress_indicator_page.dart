@@ -3,14 +3,14 @@ import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/common/util/text_style.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class CircularProgressIndicatorDemoPage extends StatefulWidget {
-  const CircularProgressIndicatorDemoPage({Key? key}) : super(key: key);
+class CircularProgressIndicatorPage extends StatefulWidget {
+  const CircularProgressIndicatorPage({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => _CircularProgressIndicatorDemoPageState();
+  State<StatefulWidget> createState() => _CircularProgressIndicatorPageState();
 }
 
-class _CircularProgressIndicatorDemoPageState extends State<CircularProgressIndicatorDemoPage> with SingleTickerProviderStateMixin {
+class _CircularProgressIndicatorPageState extends State<CircularProgressIndicatorPage> with SingleTickerProviderStateMixin {
   final int _durationSeconds = 10;
   late AnimationController _controller;
   late Animation<Color?> _colorAnimation;

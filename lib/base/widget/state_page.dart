@@ -7,16 +7,16 @@ import 'package:flutter_demo/common/util/text_style.dart';
 import 'package:flutter_demo/common/vo/base_resp_vo.dart';
 
 /// StatefulWidget测试
-class StateDemoPage extends StatefulWidget {
+class StatePage extends StatefulWidget {
   static const String routeName = "/state-demo";
 
-  const StateDemoPage({Key? key}) : super(key: key);
+  const StatePage({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => _StateDemoPageState();
+  State<StatefulWidget> createState() => _StatePageState();
 }
 
-class _StateDemoPageState extends State<StateDemoPage> {
+class _StatePageState extends State<StatePage> {
   final BaseRespVo _respVo = initBaseRespVo(code: -1);
 
   @override
