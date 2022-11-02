@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/base/bottomnavigationbar/navigation_bar_home_page.dart';
 import 'package:flutter_demo/base/enumpage/blend_mode_page.dart';
 import 'package:flutter_demo/base/enumpage/box_fit_page.dart';
+import 'package:flutter_demo/base/flexible/flexible_page.dart';
 import 'package:flutter_demo/base/futuretimer/future_page.dart';
 import 'package:flutter_demo/base/progressindicator/base_progress_indicator_menu_page.dart';
 import 'package:flutter_demo/base/repaintboundary/repaint_boundary_page.dart';
@@ -29,6 +30,7 @@ List<BaseMenuVO> baseMenuList = [
   BaseMenuVO("隐藏NavigationBar", const NavigationBarHomePage()),
   BaseMenuVO("文本框边框", const TextFieldBorderPage()),
   BaseMenuVO("截图", const RepaintBoundaryPage()),
+  BaseMenuVO("Flexible和Expanded", FlexiblePage()),
 ];
 
 class BaseMenuVO {
