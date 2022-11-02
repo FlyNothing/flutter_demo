@@ -10,6 +10,7 @@ import 'package:flutter_demo/base/repaintboundary/repaint_boundary_page.dart';
 import 'package:flutter_demo/base/router/origin_page.dart';
 import 'package:flutter_demo/base/textfield/text_field_border_page.dart';
 import 'package:flutter_demo/base/theme/theme_page.dart';
+import 'package:flutter_demo/base/transform/transform_page.dart';
 import 'package:flutter_demo/base/widget/bottom_sheet_page.dart';
 import 'package:flutter_demo/base/widget/listview_gridview1_page.dart';
 import 'package:flutter_demo/base/widget/listview_gridview2_page.dart';
@@ -33,6 +34,7 @@ List<BaseMenuVO> baseMenuList = [
   BaseMenuVO("截图", const RepaintBoundaryPage()),
   BaseMenuVO("Flexible和Expanded", FlexiblePage()),
   BaseMenuVO("图片显示", const ImagePage()),
+  BaseMenuVO("转换", const TransformPage()),
 ];
 
 class BaseMenuVO {
