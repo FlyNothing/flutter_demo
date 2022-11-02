@@ -29,7 +29,7 @@ class _PathProviderPageState extends State<PathProviderPage> {
     );
   }
 
-  _getBody(BuildContext context) {
+  Widget _getBody(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

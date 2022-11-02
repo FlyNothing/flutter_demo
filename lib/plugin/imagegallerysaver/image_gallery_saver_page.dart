@@ -29,7 +29,7 @@ class _ImageGallerySaverPageState extends State<ImageGallerySaverPage> {
     );
   }
 
-  _getBody(BuildContext context) {
+  Widget _getBody(BuildContext context) {
     return Column(
       children: [
         _getUrlTextField(),

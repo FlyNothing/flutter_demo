@@ -32,7 +32,7 @@ class _ImagePickerVideoPageState extends State<ImagePickerVideoPage> {
     );
   }
 
-  _getBody(BuildContext context) {
+  Widget _getBody(BuildContext context) {
     return Column(
       children: [
         Container(

@@ -16,7 +16,7 @@ class BottomSheetPage extends StatelessWidget {
     );
   }
 
-  _getBody(BuildContext context) {
+  Widget _getBody(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

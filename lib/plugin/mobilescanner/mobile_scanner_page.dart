@@ -24,7 +24,7 @@ class _MobileScannerPageState extends State<MobileScannerPage> {
     );
   }
 
-  _getBody(BuildContext context) {
+  Widget _getBody(BuildContext context) {
     return Container(
       color: const Color.fromRGBO(0, 0, 0, 80),
       child: Column(

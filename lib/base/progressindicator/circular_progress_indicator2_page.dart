@@ -27,7 +27,7 @@ class _CircularProgressIndicator2PageState extends State<CircularProgressIndicat
     );
   }
 
-  _getBody(BuildContext context) {
+  Widget _getBody(BuildContext context) {
     return Column(
       children: [
         Container(

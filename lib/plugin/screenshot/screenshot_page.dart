@@ -23,7 +23,7 @@ class _ScreenshotPageState extends State<ScreenshotPage> {
     );
   }
 
-  _getBody(BuildContext context) {
+  Widget _getBody(BuildContext context) {
     return Column(
       children: [
         _getViewContainer(),

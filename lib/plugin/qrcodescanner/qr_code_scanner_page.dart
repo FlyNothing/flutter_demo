@@ -35,7 +35,7 @@ class _QRCodeScannerPageState extends State<QRCodeScannerPage> {
     );
   }
 
-  _getBody(BuildContext context) {
+  Widget _getBody(BuildContext context) {
     return Stack(
       children: [
         _getQRView(context),

@@ -39,7 +39,7 @@ class _LinearProgressIndicatorPageState extends State<LinearProgressIndicatorPag
     );
   }
 
-  _getBody(BuildContext context) {
+  Widget _getBody(BuildContext context) {
     return Center(
       child: Column(
         children: [
