@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/plugin/screenutil/my_home.dart';
+import 'package:flutter_demo/plugin/screenutil/screenutil_home.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 /// 混合开发 - 设置全局主题
-class MyApp2Theme extends StatelessWidget {
-  const MyApp2Theme({Key? key}) : super(key: key);
+class ScreenutilApp2Theme extends StatelessWidget {
+  const ScreenutilApp2Theme({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class MyApp2Theme extends StatelessWidget {
           data: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          child: const MyHomePage(),
+          child: const ScreenutilHomePage(),
         );
       },
     );

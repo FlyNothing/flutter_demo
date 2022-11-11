@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/plugin/screenutil/my_home.dart';
+import 'package:flutter_demo/plugin/screenutil/screenutil_home.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 /// APP开发
-class MyApp1 extends StatelessWidget {
-  const MyApp1({Key? key}) : super(key: key);
+class ScreenutilApp1 extends StatelessWidget {
+  const ScreenutilApp1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class MyApp1 extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: const MyHomePage(),
+          home: const ScreenutilHomePage(),
           builder: EasyLoading.init(),
         );
       },

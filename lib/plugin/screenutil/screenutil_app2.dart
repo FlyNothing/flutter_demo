@@ -3,8 +3,8 @@ import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 /// 混合开发 - 部分主题
-class MyApp2 extends StatelessWidget {
-  const MyApp2({Key? key}) : super(key: key);
+class ScreenutilApp2 extends StatelessWidget {
+  const ScreenutilApp2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
