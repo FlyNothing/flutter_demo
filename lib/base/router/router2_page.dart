@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/base/router/router_page.dart';
 import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/common/util/text_style.dart';
 
@@ -10,7 +9,7 @@ class Router2Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBarStandard(title: '路由跳转'),
+      appBar: appBarStandard(title: '路由跳转2'),
       body: _getBody(context),
     );
   }
@@ -30,7 +29,7 @@ class Router2Page extends StatelessWidget {
           child: Text("This is a router2 page. argMap = $argu", textAlign: TextAlign.center, style: size16W500(color: Colors.purple)),
         ),
       ),
-      onTap: () => Navigator.popUntil(context, ModalRoute.withName(RouterPage.routeName)),
+      onTap: () => Navigator.popUntil(context, ModalRoute.withName("RouterPage")),
       // Navigator.pop(context),
     );
   }
