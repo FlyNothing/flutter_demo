@@ -28,7 +28,7 @@ class OriginPage extends StatelessWidget {
       onTap: () => Navigator.push(
         context,
         MaterialPageRoute(
-          settings: const RouteSettings(name: "RouterPage", arguments: {"page-title": "router"}),
+          settings: const RouteSettings(name: RouterPage.routeName, arguments: {"page-title": "router"}),
           builder: (context) => const RouterPage(),
         ),
         // Navigator.pushNamed(context, RouterPage.routeName, arguments: {"page-title": "router"}),
