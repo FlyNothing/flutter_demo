@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/base/router/router2_page.dart';
 import 'package:flutter_demo/base/router/router_page.dart';
 import 'package:flutter_demo/common/httperror/loading_page.dart';
 import 'package:flutter_demo/common/httperror/not_found_page.dart';
@@ -7,6 +8,7 @@ import 'package:flutter_demo/common/httperror/service_unavailable_page.dart';
 class GlobalRouter {
   static Map<String, Function> routes = {
     RouterPage.routeName: (context) => const RouterPage(),
+    Router2Page.routeName: (context) => const Router2Page(),
     HttpLoadingPage.routeName: (context) => const HttpLoadingPage(),
     HttpNotFoundPage.routeName: (context) => const HttpNotFoundPage(),
     HttpServiceUnavailablePage.routeName: (context) => const HttpServiceUnavailablePage(),

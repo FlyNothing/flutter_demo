@@ -25,9 +25,14 @@ class OriginPage extends StatelessWidget {
           child: Text("This is a home page.", textAlign: TextAlign.center, style: size16W500(color: Colors.red)),
         ),
       ),
-      onTap: () {
-        Navigator.pushNamed(context, RouterPage.routeName, arguments: {"page-title": "router"});
-      },
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(
+          settings: const RouteSettings(name: RouterPage.routeName, arguments: {"page-title": "router"}),
+          builder: (context) => const RouterPage(),
+        ),
+        // Navigator.pushNamed(context, RouterPage.routeName, arguments: {"page-title": "router"}),
+      ),
     );
   }
 }
