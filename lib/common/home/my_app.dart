@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/base/base_menu_page.dart';
-import 'package:flutter_demo/common/router/global_router.dart';
+// import 'package:flutter_demo/common/router/global_router.dart';
 import 'package:flutter_demo/issue/issue_menu_page.dart';
 import 'package:flutter_demo/plugin/easyloading/init.dart';
 import 'package:flutter_demo/plugin/plugin_menu_page.dart';
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           home: const MyHomePage(),
-          onGenerateRoute: GlobalRouter().onGenerateRoute,
+          // onGenerateRoute: GlobalRouter().onGenerateRoute,
           builder: EasyLoading.init(),
         );
       },

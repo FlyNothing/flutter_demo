@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/base/router/router2_page.dart';
-import 'package:flutter_demo/base/router/router_page.dart';
+import 'package:flutter_demo/base/navigator/1.0/router2_page.dart';
+import 'package:flutter_demo/base/navigator/1.0/router_page.dart';
 import 'package:flutter_demo/common/httperror/loading_page.dart';
 import 'package:flutter_demo/common/httperror/not_found_page.dart';
 import 'package:flutter_demo/common/httperror/service_unavailable_page.dart';
