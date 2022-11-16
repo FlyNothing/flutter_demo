@@ -6,6 +6,7 @@ import 'package:flutter_demo/base/flexible/flexible_page.dart';
 import 'package:flutter_demo/base/futuretimer/future_page.dart';
 import 'package:flutter_demo/base/image/image_page.dart';
 import 'package:flutter_demo/base/navigator/1.0/origin_page.dart';
+import 'package:flutter_demo/base/navigator/2.0/navigator_page.dart';
 import 'package:flutter_demo/base/progressindicator/base_progress_indicator_menu_page.dart';
 import 'package:flutter_demo/base/repaintboundary/repaint_boundary_page.dart';
 import 'package:flutter_demo/base/textfield/text_field_border_page.dart';
@@ -20,6 +21,7 @@ import 'package:flutter_demo/base/widget/widget_page.dart';
 
 List<BaseMenuVO> baseMenuList = [
   BaseMenuVO("路由测试1", const OriginPage()),
+  BaseMenuVO("路由测试2", const NavigatorPage()),
   BaseMenuVO("Widget测试", const WidgetPage()),
   BaseMenuVO("State测试", const StatePage()),
   BaseMenuVO("底部弹窗测试", const BottomSheetPage()),
