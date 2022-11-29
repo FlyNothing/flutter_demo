@@ -4,7 +4,7 @@ import 'package:flutter_demo/common/util/global_widget.dart';
 List<String> fruits = ["西瓜", "草莓", "苹果", "香蕉", "梨子", "桃子"];
 
 class ListPage extends StatefulWidget {
-  static const String valueKey = "ListPage";
+  static const String valueKey = "/list";
   final Function(String item) _itemTapped;
   const ListPage(this._itemTapped, {Key? key}) : super(key: key);
 

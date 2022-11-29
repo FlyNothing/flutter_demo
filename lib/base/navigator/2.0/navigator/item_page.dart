@@ -3,7 +3,7 @@ import 'package:flutter_demo/common/util/global_widget.dart';
 import 'package:flutter_demo/common/util/text_style.dart';
 
 class ItemPage extends StatefulWidget {
-  static const String valueKey = "ItemPage";
+  static const String valueKey = "/item";
   final String _item;
   const ItemPage(this._item, {Key? key}) : super(key: key);
 

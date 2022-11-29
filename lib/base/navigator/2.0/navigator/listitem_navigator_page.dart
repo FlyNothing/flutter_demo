@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/base/navigator/2.0/item_page.dart';
-import 'package:flutter_demo/base/navigator/2.0/list_page.dart';
+import 'package:flutter_demo/base/navigator/2.0/navigator/item_page.dart';
+import 'package:flutter_demo/base/navigator/2.0/navigator/list_page.dart';
 
-class NavigatorPage extends StatefulWidget {
-  const NavigatorPage({Key? key}) : super(key: key);
+class ListitemNavigatorPage extends StatefulWidget {
+  const ListitemNavigatorPage({Key? key}) : super(key: key);
   @override
-  State<StatefulWidget> createState() => _NavigatorPageState();
+  State<StatefulWidget> createState() => _ListitemNavigatorPageState();
 }
 
-class _NavigatorPageState extends State<NavigatorPage> {
+class _ListitemNavigatorPageState extends State<ListitemNavigatorPage> {
   String _selectedItem = "";
 
   @override
