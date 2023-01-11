@@ -10,6 +10,7 @@ import 'package:flutter_demo/base/navigator/2.0/navigator/listitem_navigator_pag
 import 'package:flutter_demo/base/navigator/2.0/router/listitem_navigator_router_page.dart';
 import 'package:flutter_demo/base/progressindicator/base_progress_indicator_menu_page.dart';
 import 'package:flutter_demo/base/repaintboundary/repaint_boundary_page.dart';
+import 'package:flutter_demo/base/stream/stream_page.dart';
 import 'package:flutter_demo/base/textfield/text_field_border_page.dart';
 import 'package:flutter_demo/base/theme/theme_page.dart';
 import 'package:flutter_demo/base/transform/transform_page.dart';
@@ -28,6 +29,7 @@ List<BaseMenuVO> baseMenuList = [
   BaseMenuVO("State测试", const StatePage()),
   BaseMenuVO("底部弹窗测试", const BottomSheetPage()),
   BaseMenuVO("FutureBuilder测试", const FuturePage()),
+  BaseMenuVO("StreamBuilder测试", const StreamPage()),
   BaseMenuVO("ListView和GridView测试1", const ListviewGridview1Page()),
   BaseMenuVO("ListView和GridView测试2", const ListviewGridview2Page()),
   BaseMenuVO("BoxFit模式", const BoxFitPage()),
