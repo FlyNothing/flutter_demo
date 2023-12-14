@@ -1,0 +1,189 @@
+name: flutter_demo
+description: Flutter Demo项目
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  badges: ^2.0.3
+  cached_network_image: ^3.2.2
+  carousel_slider: ^4.2.1
+  chewie: ^1.4.0 # 视频播放2
+  crypto: ^3.0.2
+  cupertino_icons: ^1.0.2
+  date_format: ^2.0.7
+  date_picker_timeline: ^1.2.3 # 水平日期选择插件1
+  device_preview: ^1.1.0
+  dio: ^4.0.6
+  easy_refresh: ^3.0.4+2 # 下拉刷新1
+  floor: ^1.4.1
+  flutter_blue_plus: ^1.30.3
+  flutter_date_picker_timeline: ^0.3.3 # 水平日期选择插件2
+  flutter_easyloading: ^3.0.5  
+  flutter_inappwebview: ^6.0.0-beta.22 # Webview2
+  flutter_native_splash: ^2.2.18  
+  flutter_screenutil: ^5.3.1
+  flutter_svg: ^2.0.2
+  go_router: ^6.0.1   
+  image_cropper: ^3.0.0
+  image_gallery_saver: ^1.7.1
+  image_picker: ^0.8.6
+  jpush_flutter: 2.4.0
+  mobile_scanner: ^2.0.0 # 二维码扫码插件2   
+  path_provider: ^2.0.11  
+  permission_handler: ^10.2.0
+  photo_view: ^0.14.0
+  provider: ^6.0.5  
+  pull_to_refresh: ^2.0.0 # 下拉刷新2  
+  qr_code_scanner: ^1.0.1 # 二维码扫码插件1  
+  qr_flutter: 4.0.0
+  responsive_framework: ^0.2.0  
+  screenshot: ^2.1.0
+  shared_preferences: ^2.0.1
+  sqflite: ^2.0.3+1  
+  tuple: ^2.0.1
+  url_launcher: ^6.1.7  
+  url_strategy: ^0.2.0
+  uuid: ^3.0.6  
+  video_player: ^2.5.3 # 视频播放1
+  web_socket_channel: ^2.2.0
+  webview_flutter: ^4.0.5 # Webview1
+dependency_overrides:
+  intl: 0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+    
+  build_runner: ^2.3.0
+  build_verify: ^3.1.0
+  go_router_builder: ^1.0.16
+  floor_generator: ^1.3.0  
+  flutter_lints: ^2.0.0  
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/videos/
+
+flutter_native_splash:
+  # 运行下面命令定制带有颜色和启动动画的闪屏
+  # flutter pub run flutter_native_splash:create
+  # 运行一下命令恢复白色闪屏
+  # flutter pub run flutter_native_splash:remove
+
+  # color和background_image是唯一必要参数，且只能设置一个而不能同时设置
+  # color用来设置纯色背景
+  # background_image用来设置背景为png图像
+  #color: "#00CCFF"
+  background_image: "assets/splash/splash.png"
+
+  # image参数允许指定一个用于闪屏的图片，必须是一个4x像素的png文件
+  #image: assets/splash/splash.png
+
+  # brandings属性允许指定一个图片作为闪屏中的品牌logo图片
+  # 支持Android、iOS和Web，安卓12部分详见后续单独配置
+  #branding: assets/splash/splash.png
+
+  # 可以通过branding_mode参数指定品牌logo所属的位置
+  # 可选值有bottom、bottomRight和bottomLeft，不指定则默认为bottom
+  #branding_mode: bottom
+
+  # color_dark、background_image_dark、image_dark和branding_dark参数用于设置深色模式时的背景和图像
+  # 如果没有设置参数，程序将使用上文声明的参数。
+  # 如果指定color_dark，则background_image_dark/image_dark/branding_dark不能同时指定
+  #color_dark: "#042a49"
+  #background_image_dark: "assets/dark-background.png"
+  #image_dark: assets/splash-invert.png
+  #branding_dark: assets/dart_dark.png
+
+  # 安卓12处理闪屏方式与之前版本不同，详细文档参考https://developer.android.com/guide/topics/ui/splash-screen
+  android_12:
+    # image参数用于设置全面屏的图标和图像
+    # 如果没指定该参数，将会使用应用程序的启动图标替代
+    # 需要注意全面屏将会剪切屏幕中心的一个圆圈
+    # APP的背景图标需要是960×960像素并且适配直径640像素的圆圈
+    # APP若没有背景图标的则需要1152x1152像素，适合直径768像素的圆圈
+    #image: assets/android12splash.png
+
+    # 全面屏背景颜色
+    #color: "#42a5f5"
+
+    # App图标的背景颜色
+    #icon_background_color: "#111111"
+
+    # branding属性允许指定图像作为全面屏中的品牌logo
+    #branding: assets/dart.png
+
+    # color_dark、background_image_dark、image_dark和branding_dark参数用于设置深色模式时的背景和图像
+    # 如果没有设置参数，程序将使用上文声明的参数。
+    #image_dark: assets/android12splash-invert.png
+    #color_dark: "#042a49"
+    #icon_background_color_dark: "#eeeeee"
+
+  # 可以通过以下参数禁止在特定平台上生成闪屏
+  #android: false
+  #ios: false
+  #web: false
+
+  # 平台特定的图像可以使用以下参数指定  
+  #color_android: "#42a5f5"
+  #color_dark_android: "#042a49"
+  #color_ios: "#42a5f5"
+  #color_dark_ios: "#042a49"
+  #color_web: "#42a5f5"
+  #color_dark_web: "#042a49"
+  #image_android: assets/splash-android.png
+  #image_dark_android: assets/splash-invert-android.png
+  #image_ios: assets/splash-ios.png
+  #image_dark_ios: assets/splash-invert-ios.png
+  #image_web: assets/splash-web.png
+  #image_dark_web: assets/splash-invert-web.png
+  #background_image_android: "assets/background-android.png"
+  #background_image_dark_android: "assets/dark-background-android.png"
+  #background_image_ios: "assets/background-ios.png"
+  #background_image_dark_ios: "assets/dark-background-ios.png"
+  #background_image_web: "assets/background-web.png"
+  #background_image_dark_web: "assets/dark-background-web.png"
+  #branding_android: assets/brand-android.png
+  #branding_dark_android: assets/dart_dark-android.png
+  #branding_ios: assets/brand-ios.png
+  #branding_dark_ios: assets/dart_dark-ios.png
+
+  # 启动动画的位置可以通过android_gravity、ios_content_mode和web_image_mode参数配置，默认都是中心
+  # android_gravity 可以设置成[https://developer.android.com/reference/android/view/Gravity]Android Gravity之一
+  # bottom、center、center_horizontal、center_vertical、clip_horizontal、clip_vertical、end、fill、fill_horizontal、fill_vertical、left、right、start、或top
+  #android_gravity: center
+  
+  # ios_content_mode 可以设置成[https://developer.apple.com/documentation/uikit/uiview/contentmode]iOS UIView.ContentMode之一
+  # scaleToFill、scaleAspectFit、scaleAspectFill、center、top、bottom、left、right、topLeft、topRight,bottomLeft或bottomRight
+  #ios_content_mode: center
+  
+  # web_image_mode可以设置成以下之一
+  # center、contain、stretch或cover
+  #web_image_mode: center
+
+  # 安卓系统中屏幕方向可以通过android_screen_orientation设置, 详见https://developer.android.com/guide/topics/manifest/activity-element#screen
+  #android_screen_orientation: sensorLandscape
+
+  # 通过fullscreen参数可以隐藏通知栏
+  # Web中没有效果，默认为false
+  # 与安卓不同iOS不在在应用加载时自动显示通知栏，要在iOS显示通知栏，需要在Flutter程序中增加以下代码  
+  #       WidgetsFlutterBinding.ensureInitialized();
+  #       SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom, SystemUiOverlay.top]);
+  #fullscreen: true
+
+  # 如果修改了info.plist文件名称，可以通过info_plist_files来指定文件
+  # 切记只可以删除#注释，不能删除任何空格
+  #info_plist_files:
+  #  - 'ios/Runner/Info-Debug.plist'
+  #  - 'ios/Runner/Info-Release.plist'    
