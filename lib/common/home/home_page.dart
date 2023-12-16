@@ -18,7 +18,6 @@ class _HomePageState extends State<HomePage> {
     {'text': 'Plugin', 'icon': const Icon(Icons.access_alarms), 'page': const PluginMenuPage()},
   ];
   final List<BottomNavigationBarItem> _myTabs = [];
-  final List<Widget> _myPages = [];
   int _selIndex = 0;
 
   @override
@@ -29,7 +28,6 @@ class _HomePageState extends State<HomePage> {
         icon: _barList[i]['icon'],
         label: _barList[i]['text'],
       ));
-      _myPages.add(_barList[i]['page']);
     }
   }
 
