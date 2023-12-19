@@ -4,7 +4,7 @@ import 'package:flutter_demo/plugin/provider/entity/order_type_enum.dart';
 String getPriceString(double price) {
   String sPrice = price.toString();
   if ((sPrice.length - sPrice.lastIndexOf(".") - 1) < 2) {
-    return (price / 12).toStringAsFixed(2);
+    return price.toStringAsFixed(2);
   } else {
     return sPrice.substring(0, sPrice.lastIndexOf(".") + 2 + 1);
   }
