@@ -1,3 +1,5 @@
+**此版本自2023年12月15日后不再更新，新的相关功能基于GET框架的[Flutter Demo2项目](https://github.com/FlyNothing/flutter_demo2)继续迭代。**
+
 # 1 项目介绍
 
 - 项目名称：Flutter Demo项目
@@ -32,5 +34,3 @@
 - base：更新一些Flutter自带的部件、功能及插件的使用
 
 - plugin：pub.dev中一些使用较多的第三方或Flutter官方扩展插件的使用和介绍
-
-此版本自2023年12月15日后不再更新，新的相关功能基于GET框架的[Flutter Demo2项目](https://github.com/FlyNothing/flutter_demo)继续迭代。
